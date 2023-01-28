@@ -19,7 +19,7 @@ function App() {
         setItems(items.filter(item => item.id !== id))
     }
     const newItem = () => {
-        if (item.trim !== ''){
+        if (item.trim() !== ''){
             const newItem = {
                 id: uuidv4(),
                 item,
